@@ -1,7 +1,6 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
-
 export const bgColorSecondEdition = 'rgb(255, 193, 94)';
 
 const secondEditionCfg = {

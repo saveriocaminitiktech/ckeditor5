@@ -5,7 +5,6 @@ import ImageFullScreen from '../icons/fullscreen.svg';
 
 import './FullScreen.css';
 
-
 const goFullScreenCfg = {
 	label: 'Full screen',
 	icon: ImageFullScreen,
@@ -35,11 +34,13 @@ export default class FullScreen extends Plugin {
 			view.on( 'execute', () => {
 				if ( isFullScreen ) {
 					editor.sourceElement.nextElementSibling.classList.remove( 'ck-fullscreen' );
+					// eslint-disable-next-line no-undef
 					document.body.classList.remove( 'ck-fullscreen-overlay' );
 					view.set( goFullScreenCfg );
 					isFullScreen = false;
 				} else {
 					editor.sourceElement.nextElementSibling.classList.add( 'ck-fullscreen' );
+					// eslint-disable-next-line no-undef
 					document.body.classList.add( 'ck-fullscreen-overlay' );
 					view.set( backToNormalCfg );
 					isFullScreen = true;

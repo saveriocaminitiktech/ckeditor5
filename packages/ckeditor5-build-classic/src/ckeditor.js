@@ -36,7 +36,7 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import OimsUploadAdapter from './custom-plugins/oimsuploadadapter';
+import FetchUploadAdapter from './custom-plugins/FetchUploadAdapter';
 
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
@@ -88,7 +88,7 @@ ClassicEditor.builtinPlugins = [
 	LinkImage,
 	ImageResize,
 	ImageUpload,
-	OimsUploadAdapter,
+	FetchUploadAdapter,
 
 	Table,
 	TableToolbar,
